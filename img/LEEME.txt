@@ -1,0 +1,7 @@
+Poné acá las fotos del gym (las de https://phccam21.pixieset.com/olympusgym/) con estos nombres:
+
+  hero.jpg   -> foto grande de portada (horizontal, la más impactante)
+  foto1.jpg  -> galería, recuadro grande (cuadrada o vertical)
+  foto2.jpg ... foto6.jpg -> resto de la galería
+
+Recomendado: JPG de ~1600px de ancho, menos de 400 KB cada una.
