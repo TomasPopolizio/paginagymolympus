@@ -359,8 +359,9 @@ h2 { font-family: var(--display); font-weight: 400; font-size: clamp(48px, 7vw, 
   .act p { max-height: 80px; opacity: 1; margin-top: 8px; }
   .hscroll-title { top: 16%; transform: none; left: 16px; }
   .hscroll-title h2 { font-size: 56px; }
-  .hscroll-track { padding-left: 16px; padding-top: 160px; }
-  .shot, .shot:nth-child(even) { width: 70vw; }
+  .hscroll-sticky { align-items: flex-end; }
+  .hscroll-track { padding-left: 16px; padding-bottom: 90px; }
+  .shot, .shot:nth-child(even) { width: 58vw; }
   .schedule { grid-template-columns: 1fr 1fr; }
   .tabs { display: flex; flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; border-radius: 16px; }
   .tab { flex: 0 0 auto; padding: 10px 16px; }
