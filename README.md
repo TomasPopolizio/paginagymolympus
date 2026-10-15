@@ -6,7 +6,7 @@ Página de una sola pantalla, estética y liviana. Todo el contacto (precios, pl
 - `styles.css` — diseño
 - `datos.js` — **precios, horarios y número de WhatsApp** (editar acá cuando cambian)
 - `main.js` — lógica (pestañas, links)
-- `img/` — fotos (ver `img/LEEME.txt` para los nombres)
+- `img/` — fotos (ver `img/LEEME.txt` para los nombres; la lista de portada y galería está en `datos.js`)
 
 Para verla: abrir `index.html` en el navegador. Para publicarla gratis: GitHub Pages (Settings → Pages → rama `main`), Netlify o Vercel.
 

@@ -97,3 +97,12 @@ const CRONOGRAMA = {
     Sábado:    [['11', 'CrossFit']],
   },
 };
+
+// Fotos (en la carpeta img/). Si falta alguna, se muestra un fondo de color en su lugar.
+const FOTOS = {
+  hero: ['img/hero-1.jpg', 'img/hero-2.jpg', 'img/hero-3.jpg'],
+  galeria: [
+    'img/galeria-1.jpg', 'img/galeria-2.jpg', 'img/galeria-3.jpg', 'img/galeria-4.jpg',
+    'img/galeria-5.jpg', 'img/galeria-6.jpg', 'img/galeria-7.jpg', 'img/galeria-8.jpg',
+  ],
+};

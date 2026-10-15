@@ -1,7 +1,8 @@
-Poné acá las fotos del gym (las de https://phccam21.pixieset.com/olympusgym/) con estos nombres:
+Fotos del gym. Nombres que usa la página:
 
-  hero.jpg   -> foto grande de portada (horizontal, la más impactante)
-  foto1.jpg  -> galería, recuadro grande (cuadrada o vertical)
-  foto2.jpg ... foto6.jpg -> resto de la galería
+  hero-1.jpg, hero-2.jpg, hero-3.jpg   -> portada (van rotando). Horizontales, las más impactantes.
+  musculacion.jpg, crossfit.jpg, bungee.jpg, boxeo.jpg, funcional.jpg, gap.jpg -> tarjetas de actividades (verticales)
+  galeria-1.jpg ... galeria-8.jpg      -> galería deslizable
+  cta.jpg                              -> fondo del bloque "¿Arrancás?"
 
-Recomendado: JPG de ~1600px de ancho, menos de 400 KB cada una.
+Recomendado: JPG ~1600px de ancho, menos de 400 KB cada una.

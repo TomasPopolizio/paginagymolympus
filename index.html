@@ -4,80 +4,156 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Olympus Fitness & Gym · San Martín</title>
-  <meta name="description" content="Olympus Fitness & Gym en San Martín, frente a plaza San Martín. Musculación, CrossFit, Bungee, Boxeo y Funcional. Escribinos por WhatsApp.">
-  <meta name="theme-color" content="#0a0c12">
+  <meta name="description" content="Olympus Fitness & Gym en San Martín, frente a plaza San Martín. Musculación, CrossFit, Bungee, Boxeo, Funcional y GAP. Escribinos por WhatsApp.">
+  <meta name="theme-color" content="#06080d">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+  <!-- LOADER -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader-word"><span>O</span><span>L</span><span>Y</span><span>M</span><span>P</span><span>U</span><span>S</span></div>
+    <div class="loader-bar"><i></i></div>
+  </div>
+
+  <div class="progress"><i></i></div>
+
+  <!-- NAV -->
   <header class="nav">
     <a href="#inicio" class="brand">OLYMPUS<span>FITNESS & GYM</span></a>
-    <nav>
+    <nav class="nav-links">
       <a href="#actividades">Actividades</a>
+      <a href="#templo">Fotos</a>
       <a href="#horarios">Horarios</a>
       <a href="#precios">Precios</a>
-      <a href="#fotos">Fotos</a>
       <a href="#ubicacion">Ubicación</a>
     </nav>
+    <a class="nav-cta js-wa" href="#" target="_blank" rel="noopener">WhatsApp</a>
+    <button class="burger" aria-label="Menú"><i></i><i></i></button>
   </header>
+
+  <div class="menu">
+    <a href="#actividades">Actividades</a>
+    <a href="#templo">Fotos</a>
+    <a href="#horarios">Horarios</a>
+    <a href="#precios">Precios</a>
+    <a href="#ubicacion">Ubicación</a>
+    <a class="js-wa menu-wa" href="#" target="_blank" rel="noopener">WhatsApp →</a>
+  </div>
 
   <!-- HERO -->
   <section id="inicio" class="hero">
-    <div class="hero-bg" style="background-image:url('img/hero.jpg')"></div>
+    <div class="slides" id="slides"></div>
+    <div class="hero-shade"></div>
     <div class="hero-content">
-      <p class="eyebrow">San Martín · Frente a la plaza</p>
-      <h1>Más reps.<br><em>Menos excusas.</em></h1>
-      <p class="lead">Musculación, CrossFit y clases. Buenos profes, buenas máquinas y la mejor música.</p>
-      <div class="actions">
+      <p class="eyebrow hero-in" style="--d:.1s"><span class="dot"></span> San Martín · Frente a la plaza</p>
+      <h1>
+        <span class="line"><span style="--d:.2s">Más reps.</span></span>
+        <span class="line"><span class="accent" style="--d:.35s">Menos excusas.</span></span>
+      </h1>
+      <p class="lead hero-in" style="--d:.6s">Musculación, CrossFit y clases con los mejores profes de San Martín.</p>
+      <div class="actions hero-in" style="--d:.75s">
         <a class="btn btn-main js-wa" data-msg="Hola Olympus! Quiero info para empezar a entrenar" href="#" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>
-          Escribinos por WhatsApp
+          Empezá hoy
         </a>
         <a class="btn btn-ghost" href="#precios">Ver precios</a>
       </div>
-      <div class="rating">
-        <span class="stars">★★★★★</span>
-        <strong>4.6</strong> en Google · +100 opiniones
-      </div>
+    </div>
+    <div class="hero-giant" aria-hidden="true">OLYMPUS</div>
+    <div class="slide-dots" id="slide-dots"></div>
+    <a href="#actividades" class="scroll-hint" aria-label="Bajar"><span></span></a>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>Más reps</span><b>✦</b><span>Menos excusas</span><b>✦</b><span>CrossFit</span><b>✦</b><span>Bungee</span><b>✦</b><span>Boxeo</span><b>✦</b><span>Funcional</span><b>✦</b><span>GAP</span><b>✦</b><span>Musculación</span><b>✦</b>
+    </div>
+  </div>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="wrap stats-grid">
+      <div class="stat reveal"><strong data-count="4.6" data-dec="1">0</strong><span>★ en Google</span></div>
+      <div class="stat reveal" style="--d:.1s"><strong data-count="100" data-pre="+">0</strong><span>opiniones</span></div>
+      <div class="stat reveal" style="--d:.2s"><strong data-count="6">0</strong><span>actividades</span></div>
+      <div class="stat reveal" style="--d:.3s"><strong data-count="6300" data-pre="+">0</strong><span>en Instagram</span></div>
     </div>
   </section>
 
   <!-- ACTIVIDADES -->
   <section id="actividades" class="section">
     <div class="wrap">
-      <p class="eyebrow">Actividades</p>
-      <h2>¿Qué podés hacer en Olympus?</h2>
-      <div class="acts">
-        <article><span class="num">01</span><h3>Musculación</h3><p>Sala completa con profes que te arman la rutina y te guían.</p></article>
-        <article><span class="num">02</span><h3>CrossFit</h3><p>Clases todos los días con <a href="https://instagram.com/park_box_" target="_blank" rel="noopener">@park_box_</a>.</p></article>
-        <article><span class="num">03</span><h3>Bungee</h3><p>Entrenamiento suspendido, divertido y de alta intensidad.</p></article>
-        <article><span class="num">04</span><h3>Boxeo recreativo</h3><p>Técnica, cardio y descarga. Sin experiencia previa.</p></article>
-        <article><span class="num">05</span><h3>Funcional</h3><p>Fuerza, movilidad y resistencia en grupo.</p></article>
-        <article><span class="num">06</span><h3>GAP</h3><p>Glúteos, abdomen y piernas. Clase localizada.</p></article>
+      <div class="head">
+        <p class="eyebrow reveal">Actividades</p>
+        <h2 data-split>Elegí cómo entrenar</h2>
       </div>
+      <div class="acts">
+        <article class="act reveal glow" style="--img:url('img/musculacion.jpg')">
+          <span class="num">01</span>
+          <div class="act-body"><h3>Musculación</h3><p>Sala completa y profes que te arman la rutina.</p></div>
+        </article>
+        <article class="act reveal glow" style="--img:url('img/crossfit.jpg'); --d:.08s">
+          <span class="num">02</span>
+          <div class="act-body"><h3>CrossFit</h3><p>Clases todos los días con @park_box_.</p></div>
+        </article>
+        <article class="act reveal glow" style="--img:url('img/bungee.jpg'); --d:.16s">
+          <span class="num">03</span>
+          <div class="act-body"><h3>Bungee</h3><p>Entrenamiento suspendido, divertido y de alta intensidad.</p></div>
+        </article>
+        <article class="act reveal glow" style="--img:url('img/boxeo.jpg')">
+          <span class="num">04</span>
+          <div class="act-body"><h3>Boxeo</h3><p>Técnica, cardio y descarga. Sin experiencia previa.</p></div>
+        </article>
+        <article class="act reveal glow" style="--img:url('img/funcional.jpg'); --d:.08s">
+          <span class="num">05</span>
+          <div class="act-body"><h3>Funcional</h3><p>Fuerza, movilidad y resistencia en grupo.</p></div>
+        </article>
+        <article class="act reveal glow" style="--img:url('img/gap.jpg'); --d:.16s">
+          <span class="num">06</span>
+          <div class="act-body"><h3>GAP</h3><p>Glúteos, abdomen y piernas. Clase localizada.</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIA HORIZONTAL -->
+  <section id="templo" class="hscroll">
+    <div class="hscroll-sticky">
+      <div class="hscroll-title">
+        <p class="eyebrow">Fotos</p>
+        <h2>Bienvenido<br>al <span class="accent">templo</span></h2>
+      </div>
+      <div class="hscroll-track" id="gallery"></div>
     </div>
   </section>
 
   <!-- HORARIOS -->
   <section id="horarios" class="section section-alt">
     <div class="wrap">
-      <p class="eyebrow">Cronograma</p>
-      <h2>Horarios de clases</h2>
-      <div class="tabs" role="tablist" id="schedule-tabs"></div>
+      <div class="head">
+        <p class="eyebrow reveal">Cronograma</p>
+        <h2 data-split>Horarios de clases</h2>
+      </div>
+      <div class="tabs reveal" role="tablist" id="schedule-tabs"></div>
       <div id="schedule" class="schedule"></div>
       <p class="note">La sala de musculación está abierta todo el día, hasta las 22 hs. El cronograma puede cambiar mes a mes; confirmalo por WhatsApp.</p>
     </div>
   </section>
 
   <!-- PRECIOS -->
-  <section id="precios" class="section">
+  <section id="precios" class="section prices-section">
+    <div class="orb orb-1"></div><div class="orb orb-2"></div>
     <div class="wrap">
-      <p class="eyebrow">Precios</p>
-      <h2>Planes</h2>
-      <div class="tabs" role="tablist" id="price-tabs"></div>
+      <div class="head">
+        <p class="eyebrow reveal">Precios</p>
+        <h2 data-split>Elegí tu plan</h2>
+      </div>
+      <div class="tabs reveal" role="tablist" id="price-tabs"></div>
       <div id="prices" class="prices"></div>
       <p class="note" id="prices-note"></p>
       <a class="btn btn-main js-wa" data-msg="Hola Olympus! Quiero consultar por un plan" href="#" target="_blank" rel="noopener">
@@ -87,42 +163,30 @@
     </div>
   </section>
 
-  <!-- FOTOS -->
-  <section id="fotos" class="section section-alt">
-    <div class="wrap">
-      <p class="eyebrow">Fotos</p>
-      <h2>Conocé el lugar</h2>
-      <div class="gallery">
-        <figure class="g1" style="background-image:url('img/foto1.jpg')"></figure>
-        <figure class="g2" style="background-image:url('img/foto2.jpg')"></figure>
-        <figure class="g3" style="background-image:url('img/foto3.jpg')"></figure>
-        <figure class="g4" style="background-image:url('img/foto4.jpg')"></figure>
-        <figure class="g5" style="background-image:url('img/foto5.jpg')"></figure>
-        <figure class="g6" style="background-image:url('img/foto6.jpg')"></figure>
-      </div>
-      <a class="ig-link" href="https://instagram.com/olympus.fitness.gym" target="_blank" rel="noopener">Más en Instagram · @olympus.fitness.gym →</a>
-    </div>
-  </section>
-
   <!-- OPINIONES -->
-  <section id="opiniones" class="section">
-    <div class="wrap">
-      <p class="eyebrow">Opiniones</p>
-      <h2>Lo que dicen de nosotros</h2>
-      <div class="quotes">
-        <blockquote><p>“Profesores capacitados para guiarte y cumplir tus objetivos. 100% recomendados.”</p></blockquote>
-        <blockquote><p>“El gym muy lindo, la gente es muy amable. Los profes todos unos genios y buena onda.”</p><cite>Leila B.</cite></blockquote>
-        <blockquote><p>“Muy buenos profes, buena atención, buenas máquinas. Buen clima, buena música siempre.”</p></blockquote>
+  <section class="reviews">
+    <div class="wrap head">
+      <p class="eyebrow reveal">Opiniones · 4.6 ★ en Google</p>
+      <h2 data-split>Lo que dicen de nosotros</h2>
+    </div>
+    <div class="reviews-row">
+      <div class="reviews-track" id="reviews">
+        <blockquote>“Profesores capacitados para guiarte y cumplir tus objetivos. 100% recomendados!!”</blockquote>
+        <blockquote>“El gym muy lindo, la gente es muy amable. Los profes todos unos genios y buena onda.”<cite>Leila B.</cite></blockquote>
+        <blockquote>“Muy buenos profes, buena atención, buenas máquinas.”</blockquote>
+        <blockquote>“Excelente ambiente. La asesoría del personal me parece muy profesional.”<cite>Alfredo V.</cite></blockquote>
+        <blockquote>“Buen clima, buena música siempre.”</blockquote>
       </div>
     </div>
   </section>
 
   <!-- CTA -->
   <section class="cta">
+    <div class="cta-bg" data-parallax="0.2" style="background-image:url('img/cta.jpg')"></div>
     <div class="wrap">
-      <h2>¿Arrancás?</h2>
-      <p>Escribinos y te pasamos toda la info. Podés pagar en el local o coordinarlo por WhatsApp.</p>
-      <a class="btn btn-light js-wa" data-msg="Hola Olympus! Quiero empezar a entrenar" href="#" target="_blank" rel="noopener">
+      <h2 class="cta-title" data-split>¿Arrancás?</h2>
+      <p class="reveal">Escribinos y te pasamos toda la info. Pagás en el local o lo coordinamos por WhatsApp.</p>
+      <a class="btn btn-light js-wa pulse reveal" data-msg="Hola Olympus! Quiero empezar a entrenar" href="#" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>
         Hablar por WhatsApp
       </a>
@@ -133,17 +197,17 @@
   <section id="ubicacion" class="section">
     <div class="wrap location">
       <div>
-        <p class="eyebrow">Ubicación</p>
-        <h2>Te esperamos</h2>
+        <p class="eyebrow reveal">Ubicación</p>
+        <h2 data-split>Te esperamos</h2>
         <ul class="info">
-          <li><span>Dirección</span>Int. Alberto M. Campos 2069<br>Frente a plaza San Martín</li>
-          <li><span>Horario</span>Abierto hasta las 22 hs</li>
-          <li><span>WhatsApp</span><a class="js-wa" href="#" target="_blank" rel="noopener">011 5423-3041</a></li>
-          <li><span>Instagram</span><a href="https://instagram.com/olympus.fitness.gym" target="_blank" rel="noopener">@olympus.fitness.gym</a></li>
+          <li class="reveal"><span>Dirección</span>Int. Alberto M. Campos 2069<br>Frente a plaza San Martín</li>
+          <li class="reveal"><span>Horario</span>Abierto hasta las 22 hs</li>
+          <li class="reveal"><span>WhatsApp</span><a class="js-wa" href="#" target="_blank" rel="noopener">011 5423-3041</a></li>
+          <li class="reveal"><span>Instagram</span><a href="https://instagram.com/olympus.fitness.gym" target="_blank" rel="noopener">@olympus.fitness.gym</a></li>
         </ul>
-        <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=Olympus+Fitness+%26+Gym+Int.+Alberto+M.+Campos+2069+San+Mart%C3%ADn" target="_blank" rel="noopener">Abrir en Google Maps</a>
+        <a class="btn btn-ghost reveal" href="https://www.google.com/maps/search/?api=1&query=Olympus+Fitness+%26+Gym+Int.+Alberto+M.+Campos+2069+San+Mart%C3%ADn" target="_blank" rel="noopener">Abrir en Google Maps</a>
       </div>
-      <div class="map">
+      <div class="map reveal">
         <iframe title="Mapa Olympus Fitness & Gym" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
           src="https://www.google.com/maps?q=Intendente+Alberto+M.+Campos+2069,+San+Mart%C3%ADn,+Buenos+Aires&output=embed"></iframe>
       </div>
@@ -151,8 +215,11 @@
   </section>
 
   <footer class="footer">
-    <span class="brand">OLYMPUS<span>FITNESS & GYM</span></span>
-    <p>© <span id="y"></span> Olympus Fitness & Gym · San Martín, Buenos Aires</p>
+    <div class="footer-giant" aria-hidden="true">OLYMPUS</div>
+    <div class="footer-row">
+      <span>© <span id="y"></span> Olympus Fitness & Gym · San Martín</span>
+      <a href="https://instagram.com/olympus.fitness.gym" target="_blank" rel="noopener">Instagram ↗</a>
+    </div>
   </footer>
 
   <a class="wa-float js-wa" href="#" target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp">
