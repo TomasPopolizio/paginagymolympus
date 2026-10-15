@@ -100,9 +100,9 @@ const CRONOGRAMA = {
 
 // Fotos (en la carpeta img/). Si falta alguna, se muestra un fondo de color en su lugar.
 const FOTOS = {
-  hero: ['img/hero-1.jpg', 'img/hero-2.jpg', 'img/hero-3.jpg'],
+  hero: ['img/gap.jpg', 'img/musculacion.jpg', 'img/crossfit.jpg'],
   galeria: [
-    'img/galeria-1.jpg', 'img/galeria-2.jpg', 'img/galeria-3.jpg', 'img/galeria-4.jpg',
-    'img/galeria-5.jpg', 'img/galeria-6.jpg', 'img/galeria-7.jpg', 'img/galeria-8.jpg',
+    'img/gap.jpg', 'img/equipo-retrato.jpg', 'img/funcional.jpg', 'img/nico-steffy-2.jpg',
+    'img/crossfit.jpg', 'img/musculacion.jpg', 'img/nico-steffy-1.jpg',
   ],
 };
