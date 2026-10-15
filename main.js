@@ -127,6 +127,17 @@ document.addEventListener('pointermove', e => {
   el.style.setProperty('--y', `${e.clientY - r.top}px`);
 });
 
+// Fotos de Nico & Steffy: se inclinan siguiendo el mouse
+if (matchMedia('(hover: hover)').matches && !reduceMotion) {
+  document.querySelectorAll('[data-tilt]').forEach(el => {
+    el.addEventListener('pointermove', e => {
+      const r = el.getBoundingClientRect(), x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
+      el.style.transform = `perspective(900px) rotateY(${x * 10}deg) rotateX(${-y * 10}deg)${el.classList.contains('tp-back') ? ' rotate(4deg)' : ''}`;
+    });
+    el.addEventListener('pointerleave', () => { el.style.transform = ''; });
+  });
+}
+
 // Contadores
 function count(el) {
   const end = parseFloat(el.dataset.count), dec = +(el.dataset.dec || 0), pre = el.dataset.pre || '';
